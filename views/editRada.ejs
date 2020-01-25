@@ -1,0 +1,49 @@
+
+<style>
+  
+    .row{
+      padding-top:80px;
+      min-height: 100vh;
+    }
+    
+    h1,
+    h1 a:hover{
+      text-align:center;
+      text-decoration:none;
+    }
+    
+    
+    
+  </style>
+  <div ="container">
+    <div class="row">
+      
+      <h1><center>Edit <%= product.naslov %> </center></h1>
+      <div style="width: 30%; margin: 20px auto">
+        <form action="/<%=product._id%>?_method=PUT" method="post">
+          
+          <div class="form-group">
+            <input class="form-control" type="text" name="naslov" value="<%=product.naslov%>">
+          </div>
+          
+          <div class="form-group">
+            <input class="form-control" type="text" name="podnaslov" value="<%=product.podnaslov%>">
+          </div>
+          
+          <div class="form-group">
+            <input class="form-control" type="text" name="slika" value="<%=product.slika%>">
+          </div>
+       
+          
+       
+          <div class="form-group">
+            <button class="btn btn-lg btn-primary btn-block"> Submit </button>
+  </div>
+        </form>
+      </div>
+          <h1 ><a href="/adminPanel">Vrati se u shop</a></h1>
+      
+    </div>
+  </div>
+  
+ 

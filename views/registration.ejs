@@ -1,0 +1,42 @@
+<link href="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+<script src="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<!------ Include the above in your HEAD tag ---------->
+
+<link href="//netdna.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+<script src="//netdna.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+<script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
+<!------ Include the above in your HEAD tag ---------->
+
+
+<!--Pulling Awesome Font -->
+<link href="//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
+
+<div class="container">
+    <div class="row">
+        <div class="col-md-offset-5 col-md-3">
+                <h4>Hi Daniel</h4>
+                <form action="/register" method="POST" onsubmit="return regvalidation()">
+                              
+                    <input id="id_username" type="text" name="username"  class="form-control input-sm chat-input" placeholder="Username" >
+                        <span id="username_span"  style="color: red"></span>
+                        <br/>
+                    <input id="id_email" type="text" name="email" class="form-control input-sm chat-input" placeholder="E-mail" >
+                        <span id="email_span"  style="color: red"></span>
+                        <br/>
+                    <input id="id_pass" type="password" name="password" class="form-control input-sm chat-input" placeholder="Unesite lozinku" >
+                        <span id="pass_span"  style="color: red"></span>
+                        <br/>
+                    <input id="id_confim" type="password" name="password_confirm" class="form-control input-sm chat-input" placeholder="Ponovo unesite lozinku" >
+                        <span id="confim_span"  style="color: red"></span>
+                        <br/>
+                   <input type="submit" name="login"class="btn btn-primary btn-md  "  value="Registriraj se">
+                  </form>
+                  <div class="login-help">
+                        <a href="/login">Imate račun? Prijavite se! </a> 
+                        
+                </div>
+        
+        </div>
+    </div>
+</div>
